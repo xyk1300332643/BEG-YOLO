@@ -1,0 +1,80 @@
+# BEG-YOLO based on Ultralytics YOLOv8x 8.0.109 object detection model with same license, AGPL-3.0 license
+# This only shows the fusion position of BRA and EMA, as well as the overall logic, 
+# and does not show the core fusion method of EMA, which will be disclosed and replaced by EMA after the paper is accepted.
+# Parameters
+nc: 6  # number of classes
+scales: # model compound scaling constants, i.e. 'model=yolov8n.yaml' will call yolov8.yaml with scale 'n'
+  # [depth, width, max_channels]
+  n: [0.33, 0.25, 1024]  
+  x: [1.00, 1.25, 512] 
+
+# YOLOv8.0n backbone
+backbone:
+  # [from, repeats, module, args]
+  - [-1, 1, Conv, [64, 3, 2]]  # 0-P1/2
+  - [-1, 1, Conv, [128, 3, 2]]  # 1-P2/4
+  - [-1, 3, C2f, [128, True]]
+  - [-1, 1, Conv, [256, 3, 2]]  # 3-P3/8
+  - [-1, 6, C2f, [256, True]]
+  - [-1, 1, Conv, [512, 3, 2]]  # 5-P4/16
+  - [-1, 6, C2f, [512, True]]
+  - [-1, 1, Conv, [1024, 3, 2]]  # 7-P5/32
+  - [-1, 3, C2f, [1024, True]]
+  - [-1, 1, SPPF, [1024, 5]]  # 9
+
+# YOLOv8.0n head
+head:
+  - [-1, 1, Conv, [512, 1, 1]] # 10
+  - [ 6, 1, Conv, [ 512, 3, 2 ] ]
+  - [-1, 1, BiLevelRoutingAttention, [8 ]]
+  - [-1, 1, EMA_attention, [8 ]]
+  - [ [ -1, 10 ], 1, Concat, [ 1 ] ]
+  - [ -1, 3, CSPStage, [ 512 ] ] # 15      
+
+  - [ -1, 1, nn.Upsample, [ None, 2, 'nearest' ] ]
+  - [6, 1, Conv, [256, 3, 2]]
+  - [-1, 1, BiLevelRoutingAttention, [8 ]]
+  - [-1, 1, EMA_attention, [8 ]]
+  - [ [ 16, -1, 8 ], 1, Concat, [ 1 ] ]
+  - [-1, 3, CSPStage, [512]] # 21    
+
+  - [ -1, 1, nn.Upsample, [ None, 2, 'nearest' ] ]
+  - [ -1, 1, BiLevelRoutingAttention, [ 8 ] ]
+  - [-1, 1, EMA_attention, [8 ]]
+  - [ [ -1, 4 ], 1, Concat, [ 1 ] ]
+  - [ -1, 3, CSPStage, [ 256 ] ]# 26   
+
+  - [ 25, 1, nn.Upsample, [ None, 2, 'nearest' ] ]
+  - [ -1, 1, BiLevelRoutingAttention, [ 8 ] ]
+  - [-1, 1, EMA_attention, [8 ]]
+  - [ [ -1, 2 ], 1, Concat, [ 1 ] ]
+  - [ -1, 3, CSPStage, [ 128 ] ] # 31   160*160
+
+  - [ -1, 1, Conv, [ 128, 3, 2 ] ]
+  - [-1, 1, BiLevelRoutingAttention, [8 ]]
+  - [-1, 1, EMA_attention, [8 ]]
+  - [ [ -1, 26  ], 1, Concat, [ 1 ] ]  # cat head P5
+  - [ -1, 3, CSPStage, [ 256 ] ]  # 36     80*80
+
+  - [ -1, 1, Conv, [ 256, 3, 2 ] ]
+  - [ -1, 1, BiLevelRoutingAttention, [ 8 ] ]
+  - [-1, 1, EMA_attention, [8 ]]
+  - [ [ -1, 21 ], 1, Concat, [ 1 ] ]  # cat head P5
+  - [ -1, 3, CSPStage, [ 512 ] ]  # 41    40*40
+
+  - [ 26, 1, Conv, [ 256, 3, 2 ] ] #
+  - [ 41, 1, Conv, [ 256, 3, 2 ] ] #
+  - [ -1, 1, BiLevelRoutingAttention, [ 8 ] ]
+  - [ -1, 1, EMA_attention, [ 8 ] ]
+  - [ [21, 42, -1 ], 1, Concat, [ 1 ] ]
+  - [ -1, 3, CSPStage, [ 1024 ] ]  # 47    20*20
+
+  - [ -1, 1, Conv, [ 256, 3, 2 ] ] #48
+  - [ -1, 1, BiLevelRoutingAttention, [ 8 ] ]
+  - [ -1, 1, EMA_attention, [ 8 ] ]
+  - [ 21, 1, EMA_attention, [ 8 ] ]
+  - [ [15, 50, -1 ], 1, Concat, [ 1 ] ]
+  - [ -1, 3, CSPStage, [ 2048 ] ]  # 53    10*10
+
+
+  - [ [ 31, 36, 41, 47, 53], 1, Detect, [ nc ] ]  # Detect(160 80 40 20 10)
