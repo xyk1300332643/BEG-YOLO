@@ -1,0 +1,38 @@
+<annotation>
+	<folder>all</folder>
+	<filename>img_02_425501900_00017.jpg</filename>
+	<path>E:\002_Data\suface dectect\2-fuxinzhe\msos1\all\img_02_425501900_00017.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>1_chongkong</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1995</xmin>
+			<ymin>1</ymin>
+			<xmax>2048</xmax>
+			<ymax>42</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>4_shuiban</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>407</xmin>
+			<ymin>733</ymin>
+			<xmax>1088</xmax>
+			<ymax>786</ymax>
+		</bndbox>
+	</object>
+</annotation>

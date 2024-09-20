@@ -1,0 +1,38 @@
+<annotation>
+	<folder>7</folder>
+	<filename>img_04_425382600_00050.jpg</filename>
+	<path>E:\002_Data\suface dectect\2-fuxinzhe\msos1\7\img_04_425382600_00050.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>7_yiwu</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>753</xmin>
+			<ymin>369</ymin>
+			<xmax>795</xmax>
+			<ymax>429</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>7_yiwu</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>255</xmin>
+			<ymin>514</ymin>
+			<xmax>318</xmax>
+			<ymax>594</ymax>
+		</bndbox>
+	</object>
+</annotation>

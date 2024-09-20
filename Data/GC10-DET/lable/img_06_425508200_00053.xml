@@ -1,0 +1,26 @@
+<annotation>
+	<folder>1</folder>
+	<filename>img_06_425508200_00053.jpg</filename>
+	<path>E:\lxm\msos1\1\img_06_425508200_00053.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>1_chongkong</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1856</xmin>
+			<ymin>125</ymin>
+			<xmax>1967</xmax>
+			<ymax>189</ymax>
+		</bndbox>
+	</object>
+</annotation>

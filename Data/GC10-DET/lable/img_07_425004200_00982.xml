@@ -1,0 +1,26 @@
+<annotation>
+	<folder>9</folder>
+	<filename>img_07_425004200_00982.jpg</filename>
+	<path>E:\lxm\msos1\9\img_07_425004200_00982.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>9_zhehen</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>35</xmin>
+			<ymin>501</ymin>
+			<xmax>817</xmax>
+			<ymax>598</ymax>
+		</bndbox>
+	</object>
+</annotation>

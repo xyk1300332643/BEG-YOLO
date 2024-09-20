@@ -1,0 +1,26 @@
+<annotation>
+	<folder>8</folder>
+	<filename>img_07_427199900_00007.jpg</filename>
+	<path>E:\lxm\msos1\8\img_07_427199900_00007.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>7_yiwu</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>472</xmin>
+			<ymin>894</ymin>
+			<xmax>589</xmax>
+			<ymax>975</ymax>
+		</bndbox>
+	</object>
+</annotation>

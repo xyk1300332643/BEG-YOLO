@@ -1,0 +1,26 @@
+<annotation>
+	<folder>6</folder>
+	<filename>img_02_3436786500_00142.jpg</filename>
+	<path>E:\lxm\msos1\6\img_02_3436786500_00142.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>6_siban</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>236</xmin>
+			<ymin>42</ymin>
+			<xmax>505</xmax>
+			<ymax>919</ymax>
+		</bndbox>
+	</object>
+</annotation>

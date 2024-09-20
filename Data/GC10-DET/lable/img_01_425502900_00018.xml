@@ -1,0 +1,26 @@
+<annotation>
+	<folder>3</folder>
+	<filename>img_01_425502900_00018.jpg</filename>
+	<path>E:\lxm\msos1\3\img_01_425502900_00018.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>3_yueyawan</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>892</xmin>
+			<ymin>801</ymin>
+			<xmax>1101</xmax>
+			<ymax>1000</ymax>
+		</bndbox>
+	</object>
+</annotation>

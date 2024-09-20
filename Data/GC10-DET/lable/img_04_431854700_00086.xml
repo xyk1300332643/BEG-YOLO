@@ -1,0 +1,26 @@
+<annotation>
+	<folder>5</folder>
+	<filename>img_04_431854700_00086.jpg</filename>
+	<path>E:\002_Data\suface dectect\2-fuxinzhe\msos1\5\img_04_431854700_00086.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>5_youban</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>793</xmin>
+			<ymin>12</ymin>
+			<xmax>975</xmax>
+			<ymax>180</ymax>
+		</bndbox>
+	</object>
+</annotation>

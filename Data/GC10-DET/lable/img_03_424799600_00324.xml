@@ -1,0 +1,26 @@
+<annotation>
+	<folder>4</folder>
+	<filename>img_03_424799600_00324.jpg</filename>
+	<path>E:\002_Data\suface dectect\2-fuxinzhe\msos1\4\img_03_424799600_00324.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>4_shuiban</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1537</xmin>
+			<ymin>278</ymin>
+			<xmax>1916</xmax>
+			<ymax>798</ymax>
+		</bndbox>
+	</object>
+</annotation>

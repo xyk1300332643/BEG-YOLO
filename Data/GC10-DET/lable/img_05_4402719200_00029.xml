@@ -1,0 +1,26 @@
+<annotation>
+	<folder>10</folder>
+	<filename>img_05_4402719200_00029.jpg</filename>
+	<path>E:\lxm\msos1\10\img_05_4402719200_00029.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>10_yaozhed</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1302</xmin>
+			<ymin>96</ymin>
+			<xmax>1951</xmax>
+			<ymax>937</ymax>
+		</bndbox>
+	</object>
+</annotation>

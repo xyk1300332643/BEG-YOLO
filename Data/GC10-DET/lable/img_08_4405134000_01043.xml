@@ -1,0 +1,26 @@
+<annotation>
+	<folder>2</folder>
+	<filename>img_08_4405134000_01043.jpg</filename>
+	<path>E:\lxm\msos1\2\img_08_4405134000_01043.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>2_hanfeng</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>17</xmin>
+			<ymin>348</ymin>
+			<xmax>908</xmax>
+			<ymax>422</ymax>
+		</bndbox>
+	</object>
+</annotation>

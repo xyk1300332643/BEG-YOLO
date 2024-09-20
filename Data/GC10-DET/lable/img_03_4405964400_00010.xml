@@ -1,0 +1,26 @@
+<annotation>
+	<folder>9</folder>
+	<filename>img_03_4405964400_00010.jpg</filename>
+	<path>E:\lxm\msos1\9\img_03_4405964400_00010.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>8_yahen</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>712</xmin>
+			<ymin>688</ymin>
+			<xmax>876</xmax>
+			<ymax>984</ymax>
+		</bndbox>
+	</object>
+</annotation>

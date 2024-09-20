@@ -1,0 +1,26 @@
+<annotation>
+	<folder>2</folder>
+	<filename>img_01_425506400_00018.jpg</filename>
+	<path>E:\002_Data\suface dectect\2-fuxinzhe\msos1\2\img_01_425506400_00018.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>2_hanfeng</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1348</xmin>
+			<ymin>571</ymin>
+			<xmax>2048</xmax>
+			<ymax>617</ymax>
+		</bndbox>
+	</object>
+</annotation>

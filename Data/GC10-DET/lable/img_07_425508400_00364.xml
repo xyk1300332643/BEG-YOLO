@@ -1,0 +1,26 @@
+<annotation>
+	<folder>7</folder>
+	<filename>img_07_425508400_00364.jpg</filename>
+	<path>E:\lxm\msos1\7\img_07_425508400_00364.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>4_shuiban</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>746</xmin>
+			<ymin>29</ymin>
+			<xmax>1262</xmax>
+			<ymax>975</ymax>
+		</bndbox>
+	</object>
+</annotation>

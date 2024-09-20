@@ -1,0 +1,26 @@
+<annotation>
+	<folder>5</folder>
+	<filename>img_07_435974600_00215.jpg</filename>
+	<path>E:\lxm\msos1\5\img_07_435974600_00215.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>5_youban</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1551</xmin>
+			<ymin>114</ymin>
+			<xmax>1807</xmax>
+			<ymax>339</ymax>
+		</bndbox>
+	</object>
+</annotation>

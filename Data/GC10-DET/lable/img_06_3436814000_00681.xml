@@ -1,0 +1,26 @@
+<annotation>
+	<folder>10</folder>
+	<filename>img_06_3436814000_00681.jpg</filename>
+	<path>E:\002_Data\suface dectect\2-fuxinzhe\msos1\10\img_06_3436814000_00681.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>10_yaozhe</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>181</xmin>
+			<ymin>17</ymin>
+			<xmax>1286</xmax>
+			<ymax>992</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,38 @@
+<annotation>
+	<folder>9</folder>
+	<filename>img_01_4402270500_00004.jpg</filename>
+	<path>E:\002_Data\suface dectect\2-fuxinzhe\msos1\9\img_01_4402270500_00004.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1000</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>9_zhehen</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>461</xmin>
+			<ymin>665</ymin>
+			<xmax>2031</xmax>
+			<ymax>742</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>9_zhehen</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>384</xmin>
+			<ymin>476</ymin>
+			<xmax>596</xmax>
+			<ymax>517</ymax>
+		</bndbox>
+	</object>
+</annotation>
